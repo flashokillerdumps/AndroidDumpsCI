@@ -21,10 +21,13 @@ jobs:
        - name: Checkouts
          uses: actions/checkout@v2
 
-       - name: CleanUSpace
-         working-directory: slimhub_actions
+       - name: CleanUpSpace
          run: |
               git clone https://github.com/rokibhasansagar/slimhub_actions
+
+       - name: Debloating
+         working-directory: slimhub_actions
+         run: |
               bash cleanup.sh
 
        - name: Clone Dumpyara
