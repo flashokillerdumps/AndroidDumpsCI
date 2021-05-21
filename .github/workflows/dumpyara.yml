@@ -14,21 +14,14 @@ env:
   ROM_URL: https://download.c.realme.com/osupdate/RMX2001_11_OTA_0610_all_3wVabGimdPKY.ozip
 
 jobs:
-  build:
+  slim_build:
     runs-on: ubuntu-latest
-
+    # You can use either of the ubuntu-18.04 or ubuntu-20.04 runner
     steps:
-       - name: Checkouts
-         uses: actions/checkout@v2
-
-       - name: CleanUpSpace
-         run: |
-              git clone https://github.com/rokibhasansagar/slimhub_actions
-
-       - name: Debloating
-         working-directory: slimhub_actions
-         run: |
-              bash cleanup.sh
+       # You might want to Checkout your repo first, but not mandatory
+       - uses: actions/checkout@v2
+       # Cleanup The Actions Workspace Using Custom Composite Run Actions
+       - uses: rokibhasansagar/slimhub_actions@main
 
        - name: Clone Dumpyara
          run: |
