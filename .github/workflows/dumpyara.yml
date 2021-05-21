@@ -25,6 +25,7 @@ jobs:
          working-directory: slimhub_actions
          run: |
               git clone https://github.com/rokibhasansagar/slimhub_actions
+              bash cleanup.sh
 
        - name: Clone Dumpyara
          run: |
