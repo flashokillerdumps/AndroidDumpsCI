@@ -22,7 +22,7 @@ jobs:
          uses: actions/checkout@v2
 
        - name: CleanUSpace
-         working-directory:slimhub_actions
+         working-directory: slimhub_actions
          run: |
               git clone https://github.com/rokibhasansagar/slimhub_actions
 
