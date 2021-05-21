@@ -28,6 +28,7 @@ jobs:
        - name: Setup Dumpyara environment
          working-directory: firmware_dumper
          run: |
+              sudo apt install python3-dev -y
               sudo bash setup.sh
               git config --global user.name "HyperNotAryanX97"
               git config --global user.email "ahirearyan2016@gmail.com"
