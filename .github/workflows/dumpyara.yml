@@ -21,6 +21,11 @@ jobs:
        - name: Checkouts
          uses: actions/checkout@v2
 
+       - name: CleanUSpace
+         run: |
+              git clone https://github.com/rokibhasansagar/slimhub_actions
+         working-directory:slimhub_actions
+
        - name: Clone Dumpyara
          run: |
               git clone https://github.com/AndroidDumpsCI/firmware_dumper
