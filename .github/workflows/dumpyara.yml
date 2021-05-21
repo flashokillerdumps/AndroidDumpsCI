@@ -11,7 +11,7 @@ defaults:
     shell: bash
 
 env:
-  ROM_URL: https://bigota.d.miui.com/V12.0.9.0.RKGMIXM/miui_MOJITOGlobal_V12.0.9.0.RKGMIXM_dca72f24be_11.0.zip
+  ROM_URL: https://download.c.realme.com/osupdate/RMX2001_11_OTA_0610_all_3wVabGimdPKY.ozip
 
 jobs:
   build:
@@ -29,16 +29,14 @@ jobs:
          working-directory: firmware_dumper
          run: |
               sudo bash setup.sh
-              git config --global user.name "Hitalo"
-              git config --global user.email "40531911+HitaloSama@users.noreply.github.com"
+              git config --global user.name "HyperNotAryanX97"
+              git config --global user.email "ahirearyan2016@gmail.com"
 
        - name: Setup config envs
          working-directory: firmware_dumper
          run: |
               echo "${{ secrets.GIT_TOKEN }}" > .github_token
               echo "${{ secrets.GIT_ORG_NAME }}" > .github_orgname
-              echo "${{ secrets.BOT_TOKEN }}" > .tg_token
-              echo "${{ secrets.CHAT_ID }}" > .tg_chat
 
        - name: Running Dumpyara
          working-directory: firmware_dumper
