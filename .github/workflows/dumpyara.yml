@@ -11,7 +11,7 @@ defaults:
     shell: bash
 
 env:
-  ROM_URL: https://wenub.capedbaldy.workers.dev/0:/SM-G600FY_G600FYXXU1BRC3%28Repairmymobile.in%29.zip
+  ROM_URL: https://transfer.sh/14hVXzJ/G600FYXXU1BRC3G600FYODD1BRC3G600FYDDU1BQL1HOME.tar.md5
 
 jobs:
   Dump:
