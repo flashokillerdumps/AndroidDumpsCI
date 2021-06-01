@@ -11,7 +11,7 @@ defaults:
     shell: bash
 
 env:
-  ROM_URL: https://transfer.sh/14hVXzJ/G600FYXXU1BRC3G600FYODD1BRC3G600FYDDU1BQL1HOME.tar.md5
+  ROM_URL: https://transfer.sh/1jrkRU2/G600FYXXU1BRC3_G600FYODD1BRC3_G600FYDDU1BQL1_HOME.tar.md5
 
 jobs:
   Dump:
