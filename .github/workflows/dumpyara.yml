@@ -11,7 +11,7 @@ defaults:
     shell: bash
 
 env:
-  ROM_URL: https://download.c.realme.com/osupdate/RMX2001_11_OTA_0610_all_3wVabGimdPKY.ozip
+  ROM_URL: https://wenub.capedbaldy.workers.dev/0:/SM-G600FY_G600FYXXU1BRC3%28Repairmymobile.in%29.zip
 
 jobs:
   Dump:
@@ -38,6 +38,8 @@ jobs:
          run: |
               echo "${{ secrets.GIT_TOKEN }}" > .github_token
               echo "${{ secrets.GIT_ORG_NAME }}" > .github_orgname
+              echo "${{ secrets.BOT_TOKEN }}" > .tg_token
+              echo "${{ secrets.CHAT_ID }}" > .tg_chat
 
        - name: Running Dumpyara
          working-directory: firmware_dumper
