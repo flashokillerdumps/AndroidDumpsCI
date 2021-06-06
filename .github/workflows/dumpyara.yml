@@ -11,7 +11,7 @@ defaults:
     shell: bash
 
 env:
-  ROM_URL: https://transfer.sh/1jrkRU2/G600FYXXU1BRC3_G600FYODD1BRC3_G600FYDDU1BQL1_HOME.tar.md5
+  ROM_URL: https://bigota.d.miui.com/21.6.2/miui_BEGONIA_21.6.2_bebc7bfe28_11.0.zip
 
 jobs:
   Dump:
