@@ -1,4 +1,4 @@
-name: Dump
+name: Dumper
  
 on:
   push:
@@ -14,33 +14,31 @@ env:
   ROM_URL: https://bigota.d.miui.com/V12.0.7.0.QJQINXM/lime_in_global_images_V12.0.7.0.QJQINXM_20210408.0000.00_10.0_in_1fb6d7356c.tgz
 
 jobs:
-  build:
+  Dump:
     runs-on: ubuntu-latest
-
     steps:
-       - name: Checkouts
-         uses: actions/checkout@v2
+       - uses: actions/checkout@v2
+       # Cleanup The Actions Workspace Using Custom Composite Run Actions
+       - uses: rokibhasansagar/slimhub_actions@main
 
        - name: Clone Dumpyara
          run: |
-              git clone https://github.com/AndroidDumpsCI/firmware_dumper
-
+              git clone https://github.com/AndroidDumps/dumpyara
        - name: Setup Dumpyara environment
-         working-directory: firmware_dumper
+         working-directory: dumpyara
          run: |
+              sudo apt update -y && sudo apt install python3-dev -y
               sudo bash setup.sh
-              git config --global user.name "HyperNotAryanx97"
+              git config --global user.name "HyperNotAryanX97"
               git config --global user.email "ahirearyan2016@gmail.com"
-
        - name: Setup config envs
-         working-directory: firmware_dumper
+         working-directory: dumpyara
          run: |
-              echo "${{ secrets.GIT_TOKEN }}" > .github_token
-              echo "${{ secrets.GIT_ORG_NAME }}" > .github_orgname
-              echo "${{ secrets.BOT_TOKEN }}" > .tg_token
-              echo "${{ secrets.CHAT_ID }}" > .tg_chat
-
+              echo "${{ secrets.GIT_TOKEN }}" > .githubtoken
+              echo "${{ secrets.GIT_ORG_NAME }}" > .githuborgname
+              echo "${{ secrets.BOT_TOKEN }}" > .tgtoken
+              echo "${{ secrets.CHAT_ID }}" > .tgchat 
        - name: Running Dumpyara
-         working-directory: firmware_dumper
+         working-directory: dumpyara
          run: |
-              ./dump.sh "$ROM_URL"
+              ./dumpyara.sh "$ROM_URL"
