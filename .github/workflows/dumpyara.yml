@@ -11,15 +11,13 @@ defaults:
     shell: bash
 
 env:
-  ROM_URL: https://bigota.d.miui.com/V12.0.7.0.QJQINXM/lime_in_global_images_V12.0.7.0.QJQINXM_20210408.0000.00_10.0_in_1fb6d7356c.tgz
+  ROM_URL: https://wenub.cosmiclink.workers.dev/0:/lime_in_global_images_V12.0.7.0.QJQINXM_20210408.0000.00_10.0_in_1fb6d7356c.tgz
 
 jobs:
   Dump:
     runs-on: ubuntu-latest
     steps:
        - uses: actions/checkout@v2
-       # Cleanup The Actions Workspace Using Custom Composite Run Actions
-       - uses: rokibhasansagar/slimhub_actions@main
 
        - name: Clone Dumpyara
          run: |
