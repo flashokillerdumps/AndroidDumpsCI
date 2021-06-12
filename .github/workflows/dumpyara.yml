@@ -11,7 +11,7 @@ defaults:
     shell: bash
 
 env:
-  ROM_URL: https://bigota.d.miui.com/V12.0.7.0.QJQINXM/miui_LIMEINGlobal_V12.0.7.0.QJQINXM_912c570415_10.0.zip
+  ROM_URL: https://wenub.cosmiclink.workers.dev/0:/RMX2001_11_OTA_10800270_all_EeTIanOoPNCI_54abd937d31b.ozip
 
 jobs:
   build:
