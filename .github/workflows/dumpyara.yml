@@ -11,7 +11,7 @@ defaults:
     shell: bash
 
 env:
-  ROM_URL: https://wenub.cosmiclink.workers.dev/0:/RMX2001_11_OTA_10800270_all_EeTIanOoPNCI_54abd937d31b.ozip
+  ROM_URL: https://cloud.minati.workers.dev/RMX3231_11_A.27-realmec11-Unisoc.zip
 
 jobs:
   build:
@@ -36,9 +36,9 @@ jobs:
          working-directory: phoenix_firmware_dumper
          run: |
               echo "${{ secrets.GIT_TOKEN }}" > .github_token
-              echo "${{ secrets.GIT_ORG_NAME }}" > .git_org
+              echo "${{ secrets.GIT_ORG_NAME }}" > .git_orgname
               echo "${{ secrets.BOT_TOKEN }}" > .tg_token
-              echo "${{ secrets.CHAT_ID }}" > .chat_id
+              echo "${{ secrets.CHAT_ID }}" > .tg_chat
 
        - name: Running Dumpyara
          working-directory: phoenix_firmware_dumper
