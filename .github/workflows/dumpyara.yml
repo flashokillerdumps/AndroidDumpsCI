@@ -43,4 +43,4 @@ jobs:
        - name: Running Dumpyara
          working-directory: phoenix_firmware_dumper
          run: |
-              ./dumper.sh "$ROM_URL"
+              ./dumper.sh  "$ROM_URL"
