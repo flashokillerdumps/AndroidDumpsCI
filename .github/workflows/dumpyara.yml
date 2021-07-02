@@ -11,7 +11,7 @@ defaults:
     shell: bash
 
 env:
-  ROM_URL: https://sourceforge.net/projects/xiaomi-eu-multilang-miui-roms/files/xiaomi.eu/MIUI-WEEKLY-RELEASES/21.6.23/xiaomi.eu_multi_HMNote94G_HM9T_21.6.23_v12-11.zip/download#
+  ROM_URL: https://bigota.d.miui.com/V12.0.17.0.QJQCNXM/lime_images_V12.0.17.0.QJQCNXM_20210608.0000.00_10.0_cn_59cbca5975.tgz
 
 jobs:
   build:
