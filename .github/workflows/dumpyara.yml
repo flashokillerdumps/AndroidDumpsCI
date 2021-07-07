@@ -44,3 +44,5 @@ jobs:
          working-directory: phoenix_firmware_dumper
          run: |
               ./dumper.sh  "$ROM_URL"
+
+#haha
