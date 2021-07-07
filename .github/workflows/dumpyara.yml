@@ -11,7 +11,7 @@ defaults:
     shell: bash
 
 env:
-  ROM_URL: https://bigota.d.miui.com/V12.0.17.0.QJQCNXM/lime_images_V12.0.17.0.QJQCNXM_20210608.0000.00_10.0_cn_59cbca5975.tgz
+  ROM_URL: http://mtk-p.micromaxinfo.com/product/E6746/Software/India/MMX_E6746_SW_V10.0._HW_V1.0_20210416.zip
 
 jobs:
   build:
