@@ -29,8 +29,8 @@ jobs:
          working-directory: phoenix_firmware_dumper
          run: |
               sudo bash setup.sh
-              git config --global user.name "HyperNotAryanX97"
-              git config --global user.email "ahirearyan2016@gmail.com"
+              git config --global user.name "flashokiller"
+              git config --global user.email "flashokiller@gmail.com"
 
        - name: Setup config envs
          working-directory: phoenix_firmware_dumper
