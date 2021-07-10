@@ -28,7 +28,8 @@ jobs:
        - name: Setup Dumpyara environment
          working-directory: frimware_dumper
          run: |
-              sudo bash setup.sh
+              cd firmware_dumper
+              bash setup.sh
               git config --global user.name "flashokiller"
               git config --global user.email "flashokiller@gmail.com"
 
