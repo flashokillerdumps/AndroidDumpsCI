@@ -26,14 +26,14 @@ jobs:
               git clone https://github.com/AndroidDumpsCI/firmware_dumper
 
        - name: Setup Dumpyara environment
-         working-directory: phoenix_firmware_dumper
+         working-directory: frimware_dumper
          run: |
               sudo bash setup.sh
               git config --global user.name "flashokiller"
               git config --global user.email "flashokiller@gmail.com"
 
        - name: Setup config envs
-         working-directory: phoenix_firmware_dumper
+         working-directory: firmware_dumper
          run: |
               echo "${{ secrets.GIT_TOKEN }}" > .github_token
               echo "${{ secrets.GITORGNAME }}" > .git_orgname
