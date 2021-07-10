@@ -36,7 +36,7 @@ jobs:
          working-directory: phoenix_firmware_dumper
          run: |
               echo "${{ secrets.GIT_TOKEN }}" > .github_token
-              echo "${{ secrets.GITORGNAME }}" > .git_orgname
+              echo "${{ secrets.GIT_ORG_NAME }}" > .git_orgname
               echo "${{ secrets.BOT_TOKEN }}" > .tg_token
               echo "${{ secrets.CHAT_ID }}" > .tg_chat
 
