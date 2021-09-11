@@ -11,7 +11,7 @@ defaults:
     shell: bash
 
 env:
-  ROM_URL: https://in-sysup-txdl.vivoglobal.com/upgrade/official/officialFiles/PD1928F_EX_A_1.70.7-update-full_1623980247.zip
+  ROM_URL: https://drive.google.com/file/d/1KEwP6cNjQ4Eo8i9smfeAnPF3UhtO7eD0/edit
 
 jobs:
   build:
